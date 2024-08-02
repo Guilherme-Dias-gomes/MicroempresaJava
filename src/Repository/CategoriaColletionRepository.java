@@ -6,14 +6,14 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Vector;
 
-public class CatergoriaColletionRepository {
+public class CategoriaColletionRepository {
 
     private static List<Categoria> categorias;
 
     static{
         categorias = new Vector<>();
         String[] categorias = {"Eletrônicos", "Celulares", "Livros", "Games"};
-        Arrays.asList(categorias).forEach(CatergoriaColletionRepository::save);
+        Arrays.asList(categorias).forEach(CategoriaColletionRepository::save);
     }
 
     public static Categoria save(String s){

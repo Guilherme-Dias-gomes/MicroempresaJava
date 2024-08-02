@@ -17,14 +17,14 @@ public class ProdutoColletionRepository {
         produtos = new Vector<>();
 
         Produto kindle = new Produto();
-        kindle.setCategoria(CatergoriaColletionRepository.findById(1l))
+        kindle.setCategoria(CategoriaColletionRepository.findById(1l))
                 .setNome("kindle")
                 .setDescricao("e-reader da Amazon")
                 .setDataCadastro(LocalDateTime.now())
                 .setPreco(BigDecimal.valueOf(899.99));
 
         Produto iphone = new Produto();
-        iphone.setCategoria(CatergoriaColletionRepository.findById(2l))
+        iphone.setCategoria(CategoriaColletionRepository.findById(2l))
                 .setNome("Iphone 14 PRO MAX")
                 .setDescricao("Aparelho celular de última geração da Apple")
                 .setDataCadastro(LocalDateTime.now())
